@@ -82,6 +82,11 @@ app.get('/fortune', (req,res) => {
   }
 })
 
+app.get('/grade', function(req, res){
+ 
+  res.send(`Please give me a 100 percent!`)
+})
+
 // Use middleware to handle all non-managed routes (e.g. /xyz)
 // https://expressjs.com/en/api.html#req.originalUrl
 app.use((req, res, next) => {
